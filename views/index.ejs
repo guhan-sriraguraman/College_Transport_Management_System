@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Fees Payment Portal</title>
+  <style>
+     @import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+}
+ .navigation {
+     height: 55px;
+     background: linear-gradient(45deg, #4199fe, #74b4fe);
+}
+.card{
+margin-left:620px;
+margin-top:50px;
+}
+
+ .brand {
+     position: absolute;
+     padding-left: 20px;
+     float: left;
+     line-height: 55px;
+     text-transform: uppercase;
+     font-size: 1.4em;
+}
+ .brand a, .brand a:visited {
+     color: #ffffff;
+     text-decoration: none;
+}
+ .nav-container {
+     max-width: 1000px;
+     margin: 0 auto;
+}
+ nav {
+     float: right;
+}
+ nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ nav ul li {
+     float: left;
+     position: relative;
+}
+ nav ul li a,nav ul li a:visited {
+     display: block;
+     padding: 0 20px;
+     line-height: 55px;
+     color: #fff;
+     background: #262626 ;
+     text-decoration: none;
+}
+ nav ul li a{
+     background: transparent;
+     color: #FFF;
+}
+ nav ul li a:hover, nav ul li a:visited:hover {
+     background: #2581DC;
+     color: #ffffff;
+}
+ .navbar-dropdown li a{
+     background: #2581DC;
+}
+ nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+     padding-left: 4px;
+     content: ' \025BE';
+}
+ nav ul li ul li {
+     min-width: 190px;
+}
+ nav ul li ul li a {
+     padding: 15px;
+     line-height: 20px;
+}
+ .navbar-dropdown {
+     position: absolute;
+     display: none;
+     z-index: 1;
+     background: #fff;
+     box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
+}
+/* Mobile navigation */
+ .nav-mobile {
+     display: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: transparent;
+     height: 55px;
+     width: 70px;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+article {
+  width: 100%;
+  max-width: 320px;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  animation: slide-in-right-to-left 0.5s ease-in-out forwards;
+}
+
+article img {
+  border-radius: 5px;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+article h2 {
+  margin: 0.5rem 0;
+  padding: 2px;
+  font: 600 24px sans-serif;
+  color: #03a9f4;
+  animation: fadetext 2s ease-in-out forwards;
+}
+
+article p {
+  margin-bottom: 1rem;
+  padding: 2px;
+  color: #777;
+  font-family: sans-serif;
+  animation: fadetext 2.2s ease-in-out forwards;
+}
+
+article button {
+  padding: 0.5rem 0.7rem;
+  display: block;
+  background-color: #03a9f4;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s all;
+  animation: slide-in-top-to-bottom 1.5s;
+}
+
+article button:hover {
+  background-color: #29b6f6;
+  transform: translatey(-2px);
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+article button:active {
+  transform: translatey(0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slide-in-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-top-to-bottom {
+  0% {
+    opacity: 0;
+    transform: translatey(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translatey(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetext {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+ </style>
+</head>
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">Bus Fees Payment Portal</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+         
+          <li>
+            <a href="/users/login">Login</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <br>
+  <article class="card">
+    <div>
+      <img src="https://srisakthicoach.com/wp-content/uploads/2022/08/DSC_00-6-scaled.jpg" alt="">
+    </div>
+    <h2>Fees Payment👇</h2>
+    <p>Convenient, Secure, and Hassle-Free Payment Solutions for Your Transportation Needs!</p>
+    <button><a class="button" href="/payment">Make Payment</a></button>
+  </article>
+</body>
+</html>
